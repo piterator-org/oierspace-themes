@@ -1,12 +1,12 @@
-import { createApp } from './app'
-import type { PageContext } from './types'
-import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
+import { createApp } from "./app";
+import type { PageContext } from "./types";
+import type { PageContextBuiltInClient } from "vite-plugin-ssr/client";
 
-export { render }
+export { render };
 
 async function render(pageContext: PageContextBuiltInClient & PageContext) {
-  const app = createApp(pageContext)
-  app.mount('#app')
+  const app = createApp(pageContext);
+  app.mount("#app");
 }
 
 /* To enable Client-side Routing:

@@ -1,11 +1,11 @@
-export type PageProps = {}
+export type PageProps = Record<string, unknown>;
 // The `pageContext` that are available in both on the server-side and browser-side
 export type PageContext = {
-  Page: any
-  pageProps?: PageProps
+  Page: any;
+  pageProps?: PageProps;
   documentProps?: {
-    title?: string
-    description?: string
-  }
-  urlPathname?: string
-}
+    title?: string;
+    description?: string;
+  };
+  urlPathname?: string;
+};

@@ -1,0 +1,7 @@
+.eslintrc
+.eslintrc.*
+.eslintignore
+
+.prettierrc
+.prettierrc.*
+.prettierignore
