@@ -5,3 +5,6 @@
 .prettierrc
 .prettierrc.*
 .prettierignore
+
+/dist/**
+!/dist/app.*

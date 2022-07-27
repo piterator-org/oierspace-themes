@@ -1,12 +1,15 @@
 {
   "name": "@oierspace/theme-vite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "./dist/app.js",
+  "types": "./dist/app.d.ts",
   "scripts": {
+    "postinstall": "vite build",
+    "prepack": "tsc -p tsconfig.build.json",
     "dev": "npm run server",
     "prod": "npm run build && npm run server:prod",
-    "build": "vite build && tsc -p tsconfig.build.json",
+    "build": "npm run postinstall && npm run prepack",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server"
   },
