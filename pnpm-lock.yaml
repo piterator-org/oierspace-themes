@@ -14,6 +14,30 @@ importers:
       lint-staged: 13.0.3
       nx: 14.4.3
 
+  packages/data:
+    specifiers:
+      '@typescript-eslint/eslint-plugin': ^5.31.0
+      '@typescript-eslint/parser': ^5.31.0
+      eslint: ^7.32.0 || ^8.2.0
+      eslint-config-airbnb-base: ^15.0.0
+      eslint-config-airbnb-typescript: ^17.0.0
+      eslint-config-prettier: ^8.5.0
+      eslint-plugin-import: ^2.25.2
+      eslint-plugin-prettier: ^4.2.1
+      prettier: ^2.7.1
+      typescript: ^4.7.4
+    devDependencies:
+      '@typescript-eslint/eslint-plugin': 5.31.0_d5zwcxr4bwkhmuo464cb3a2puu
+      '@typescript-eslint/parser': 5.31.0_he2ccbldppg44uulnyq4rwocfa
+      eslint: 8.20.0
+      eslint-config-airbnb-base: 15.0.0_afl3vkhn63baibzal45igheroq
+      eslint-config-airbnb-typescript: 17.0.0_endw7x3nefh3kpkbzaw3wdao5q
+      eslint-config-prettier: 8.5.0_eslint@8.20.0
+      eslint-plugin-import: 2.26.0_ficupzxy3q6nk56ibvavehtzue
+      eslint-plugin-prettier: 4.2.1_g4fztgbwjyq2fvmcscny2sj6fy
+      prettier: 2.7.1
+      typescript: 4.7.4
+
   packages/remix:
     specifiers:
       '@remix-run/dev': ^1.6.5
